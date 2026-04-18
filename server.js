@@ -3,7 +3,7 @@ import connectDB from './src/config/db.js'
 
 connectDB();
 
-
-app.listen(3000, () => {
+const PORT=process.env.PORT
+app.listen(PORT, () => {
     console.log("Server is running on port no. 3000")
 })
