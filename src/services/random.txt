@@ -1,0 +1,119 @@
+
+{
+  "matchScore": 85,
+  "technicalQuestions": [
+    {
+      "question": "Can you explain the difference between JWT and OAuth, and which one would you choose for a internal dashboard versus a public-facing app with third-party logins?",
+      "intention": "To assess the candidate's understanding of authentication protocols mentioned in both the resume and job description.",     
+      "answer": "Explain that JWT is a token format used for stateless authentication between parties, while OAuth is an authorization framework allowing third-party access. For internal dashboards, JWT with HttpOnly cookies is standard. For third-party logins (Sign in with Google), OAuth 2.0 is the correct choice."       
+    },
+    {
+      "question": "How did you achieve a 30% improvement in API response time at ABC Tech Solutions?",      
+      "intention": "To verify the claim on the resume and understand the candidate's optimization strategies.",
+      "answer": "Focus on specific techniques like implementing Redis caching, optimizing MongoDB queries using indexing, reducing payload sizes, or using asynchronous processing for non-blocking tasks."
+    },
+    {
+      "question": "Explain the concept of 'Higher-Order Components' in React and when you would use them compared to Hooks.",
+      "intention": "To test deep knowledge of React architecture and code reusability.",
+      "answer": "Cover that HOCs are functions taking a component and returning a new one to inject props/logic. Compare with Hooks, noting that Hooks are generally preferred for logic sharing in functional components, while HOCs are useful for cross-cutting concerns like wrapping components with authentication checks or layout wrappers."
+    },
+    {
+      "question": "In Node.js, how does the Event Loop handle asynchronous operations, and what is the role of the Libuv library?",
+      "intention": "To evaluate the candidate's core understanding of Node.js internals beyond just writing Express routes.",
+      "answer": "Describe the phases of the event loop (timers, poll, check). Explain that Libuv provides the thread pool and handles the asynchronous I/O operations, allowing Node.js to be non-blocking despite being single-threaded."
+    }
+  ],
+  "behavioralQuestions": [
+    {
+      "question": "Describe a situation where you had a conflict with a UI/UX designer regarding a feature implementation. How did you resolve it?",
+      "intention": "To assess collaboration skills and the ability to find a middle ground between design vision and technical feasibility.",   
+      "answer": "Use the STAR method. Focus on communication, explaining technical constraints clearly without being dismissive, and proposing an alternative that fulfills the user experience goal while maintaining performance."
+    },
+    {
+      "question": "You mentioned you are currently learning TypeScript. Why did you decide to learn it, and how have you applied it so far?",   
+      "intention": "To gauge the candidate's self-motivation and growth mindset regarding the skill gaps identified in the JD.",
+      "answer": "Discuss the benefits of type safety in large-scale applications, such as catching errors at compile-time. Mention any side projects or refactoring of existing code you've done to practice TS."       
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "TypeScript",        
+      "severity": "medium"
+    },
+    {
+      "skill": "CI/CD (Jenkins/GitHub Actions)",
+      "severity": "medium"
+    },
+    {
+      "skill": "Cloud Services (AWS/GCP)",
+      "severity": "low"
+    },
+    {
+      "skill": "System Design Patterns",
+      "severity": "medium"
+    }
+  ],
+  "preparationPlan": [
+    {
+      "day": 1,
+      "focus": "Advanced JavaScript and React Internals",
+      "tasks": [
+        "Review Closures, Prototypes, and Event Loop in JS.",
+        "Practice React reconciliation process and Virtual DOM concepts.",
+        "Implement a custom hook to handle complex state logic."        
+      ]
+    },
+    {
+      "day": 2,
+      "focus": "Redux Toolkit and State Management",
+      "tasks": [
+        "Learn Redux Toolkit (createSlice, createAsyncThunk) as the JD prefers it over standard Redux.",    
+        "Refactor a small state project from Redux to Redux Toolkit."   
+      ]
+    },
+    {
+      "day": 3,
+      "focus": "Backend Deep Dive and MongoDB Optimization",
+      "tasks": [
+        "Study MongoDB indexing types (Single, Compound, TTL).",        
+        "Practice writing aggregation pipelines for complex data retrieval.",
+        "Review Node.js Streams and Buffer for performance optimization."
+      ]
+    },
+    {
+      "day": 4,
+      "focus": "TypeScript Fundamentals",
+      "tasks": [
+        "Learn Interfaces, Types, Generics, and Enums.",
+        "Convert a small Express controller to TypeScript.",
+        "Understand React + TS patterns (Typing props and events)."     
+      ]
+    },
+    {
+      "day": 5,
+      "focus": "Authentication and Security",
+      "tasks": [
+        "Implement a sample OAuth flow using Passport.js or a similar library.",
+        "Study security best practices (CORS, XSS, CSRF protection, Helmet.js)."
+      ]
+    },
+    {
+      "day": 6,
+      "focus": "System Design and DevOps Basics",
+      "tasks": [
+        "Learn basics of Load Balancing and Horizontal vs Vertical Scaling.",
+        "Understand Docker basics and create a Dockerfile for a MERN app.",
+        "Research basic CI/CD pipeline concepts using GitHub Actions."  
+      ]
+    },
+    {
+      "day": 7,
+      "focus": "Final Review and Behavioral Prep",
+      "tasks": [
+        "Prepare STAR stories for past projects.",
+        "Conduct a mock technical interview focusing on DSA and MERN.", 
+        "Review the tech stack of TechNova Solutions."
+      ]
+    }
+  ]
+}
