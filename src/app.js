@@ -7,7 +7,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: "mern-interview-frontend.vercel.app",
+  origin: "https://mern-interview-frontend.vercel.app",
   credentials: true
 }));
 
