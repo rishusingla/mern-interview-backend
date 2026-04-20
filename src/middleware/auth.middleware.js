@@ -5,7 +5,7 @@ import config from '../config/config.js'
 
 async function authMiddleware(req, res,next) {
     const token = req.cookies.token;
-
+        console.log("Cookies:", req.cookies);
     if (!token) {
         return res.status(401).json({
             message:"Token not provided"
