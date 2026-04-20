@@ -5,7 +5,7 @@ import cors from 'cors'
 import interviewRouter from './routes/interview.routes.js';
 const app = express();
 
-
+app.set("trust proxy", 1);
 app.use(cors({
   origin: "https://mern-interview-frontend.vercel.app",
   credentials: true
