@@ -10,7 +10,9 @@ app.use(cors({
   origin: "https://mern-interview-frontend.vercel.app",
   credentials: true
 }));
-
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
 app.use(express.json());
 app.use(cookieParser());
 
